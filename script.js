@@ -112,6 +112,13 @@ let letterVals = [ "v", "x", "r", "f", "p" ];
 function interleave(){
     let vals = [];
     // Your answer here:
+
+    for(let n = 0; n < letterVals.length; n++){
+      vals[n] = letterVals[n] + numberVals[n];
+     }
+
+     return vals;
+
 }
 
 
