@@ -135,5 +135,23 @@ let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close"
 
 function union(){
     let same = [];
-    // Your answer here:
+    // Puts same values in small or undefined.
+    for(let n = 0; n < first.length; n++){
+      if(first[n] === second[n]){
+      same[n] = second[n];
+      }
+     }
+     // Removes undefined inputs from small.
+     for(let n = 0; n < first.length; n++){
+       if(same[n] === undefined){
+       same.splice(n,1);
+       }
+      }
+      for(let n = 0; n < same.length; n++){
+        if(same[n] === undefined){
+        same.splice(n,1);
+        }
+       }
+
+    return same;
 }
