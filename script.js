@@ -38,8 +38,6 @@ function smallNums(){
       smallNums.splice(n,1);
       }
      }
-
-
   return smallNums;
 }
 
@@ -47,6 +45,10 @@ function smallNums(){
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
 function addNums(){
+  numbers.push(12);
+  numbers.push(99);
+  numbers.push(101);
+  return numbers;
     // Your answer here:
 }
 
